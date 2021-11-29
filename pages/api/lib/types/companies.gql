@@ -1,0 +1,52 @@
+# Company Type
+type Company {
+    _id: ID
+    companyName: String
+    registeredOfficeAddress: String
+    companyLegalStatus: String
+    companyType: String
+    accounts: String
+    natureOfBusiness: String
+    dissolvedOn: String
+    incorporatedOn: String
+    idUser: ID
+}
+
+"""Response Company"""
+type Response {
+    success: Boolean
+    message: String
+}
+# Fragments
+# fragment NameParts on Company {
+#   companyName
+#   registeredOfficeAddress
+# }
+# Company Input
+input ICompany {
+    companyName: String
+    registeredOfficeAddress: String
+    companyLegalStatus: String
+    companyType: String
+    accounts: String
+    natureOfBusiness: String
+    dissolvedOn: String
+    incorporatedOn: String
+    idUser: ID
+}
+
+# Query
+type Query {
+  """Register one Team in company"""
+  getCompanies: [Company]
+  getAllCompanyById: [Company]
+  getOneCompanyById(idC: ID): Company
+  # getSuppliersOne(_id: String): [Supplier]
+}
+
+# Mutations
+type Mutation {
+  RegisterOneTeam(idC: ID, uEmail: String): Response
+  newCompany(input: ICompany): Company
+  deleteCompany(id: ID!): Boolean
+}

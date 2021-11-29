@@ -8,8 +8,6 @@
     "export": "next export"
   },
   "dependencies": {
-    
-    "dotenv": "^10.0.0",
     "@apollo/client": "^3.5.5",
     "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.7.2",
@@ -31,6 +29,7 @@
     "chart.js": "^3.6.0",
     "currency-formatter": "^1.5.9",
     "deepmerge": "^4.2.2",
+    "dotenv": "^10.0.0",
     "eslint-plugin-babel": "^5.3.1",
     "framer-motion": "^5",
     "graphql": "^16.0.1",
@@ -38,11 +37,13 @@
     "graphql-upload": "^12.0.0",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^3.1.2",
+    "micro": "^9.3.4",
     "micro-cors": "^0.1.1",
     "minio": "^7.0.22",
     "moment": "^2.29.1",
     "mongoose": "^6.0.13",
     "nanoid": "^3.1.30",
+    "next": "^12.0.4",
     "next-iron-session": "^4.2.0",
     "nodemailer": "^6.7.2",
     "react": "17.0.2",
@@ -55,8 +56,7 @@
     "react-recoil-form": "^0.1.4",
     "react-scripts": "4.0.3",
     "recoil": "^0.5.2",
-    "styled-components": "^5.3.3",
-    "next": "^12.0.4"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.0.0-beta.4"
