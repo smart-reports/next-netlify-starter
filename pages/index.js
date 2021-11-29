@@ -12,6 +12,7 @@ export default function Home() {
 
       <main>
         <Header title="Welcome to your new module!" />
+        <h1>Spice InterGroup Billing and Commissions Module</h1>
         <p className="description">
         </p>
       </main>
